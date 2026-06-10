@@ -484,10 +484,9 @@
     box-shadow: 5px 10px 0 var(--brown);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    padding: 24px;
+    align-items: stretch;
+    gap: 0;
+    padding: 0; /* remove inner padding so divider sits at card edge */
   }
   /* Use same product-image sizing and body spacing so quack cards match product cards */
   .quack-card .product-card-body {
@@ -502,13 +501,14 @@
   /* Make quack-card images and body identical to product-card */
   .quack-card .product-card-img {
     background: transparent;
+    width: 100%;
     height: 260px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     border-bottom: 2px solid #3f2511;
-    flex: 1;
+    flex: 0 0 260px;
   }
   .quack-card .product-card-img img {
     height: 220px;
@@ -531,6 +531,8 @@
     border-radius: var(--radius);
     border: var(--border-brown);
     overflow: hidden;
+    padding: 0; /* ensure consistent full-width divider */
+    align-items: stretch;
   }
   .quack-card { height: 340px; }
   .quack-card .card-back { background: #f5e642; box-shadow: 5px 10px 0 var(--brown); }
