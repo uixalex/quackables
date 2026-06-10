@@ -514,6 +514,18 @@
     border-left: 2px solid #3f2511;
     margin-left: 12px;
   }
+
+  /* Ensure quack-card front matches product-card visuals exactly */
+  .quack-card .card-front {
+    background: var(--cream);
+    box-shadow: 5px 10px 0 var(--brown);
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--radius);
+    border: var(--border-brown);
+    overflow: hidden;
+  }
+  .quack-card { height: 340px; }
   .quack-card .card-back { background: #f5e642; box-shadow: 5px 10px 0 var(--brown); }
   .quack-card-name { font-family: var(--font-display); font-size: 22px; color: var(--dark); }
   .quack-card-price { font-weight: 800; font-size: 18px; }
