@@ -517,9 +517,9 @@
     transition: transform .3s;
   }
   .quack-card .product-card-body .product-price {
-    padding-left: 12px;
-    border-left: 2px solid #3f2511;
-    margin-left: 12px;
+    padding-left: 0;
+    margin-left: 0;
+    border-left: none;
   }
 
   /* Ensure quack-card front matches product-card visuals exactly */
