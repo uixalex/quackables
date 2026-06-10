@@ -487,6 +487,16 @@
     width: auto;
     object-fit: contain;
   }
+  .quack-card .product-card-body {
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .quack-card .product-name { font-family: var(--font-display); font-size: 20px; }
+  .quack-card .product-price { font-weight: 800; font-size: 18px; padding-left: 12px; border-left: 2px solid #3f2511; }
   .quack-card .card-back { background: #f5e642; box-shadow: 5px 10px 0 var(--brown); }
   .quack-card-name { font-family: var(--font-display); font-size: 22px; color: var(--dark); }
   .quack-card-price { font-weight: 800; font-size: 18px; }
@@ -778,6 +788,12 @@
     /* Top Quacks header */
     .quacks-header { flex-direction: column; gap: 20px; }
     .speech-bubble { margin-top: 0; }
+
+    /* Larger logo on mobile */
+    .nav-logo img { height: 56px !important; }
+
+    /* Give more space between nav (cart) and hero image */
+    .hero-content { padding: 48px 24px 48px; }
 
     /* Promo */
     .section-promo { grid-template-columns: 1fr; gap: 20px; }
