@@ -491,6 +491,29 @@
   }
   .quack-card .product-name { font-family: var(--font-display); font-size: 20px; }
   .quack-card .product-price { font-weight: 800; font-size: 18px; }
+
+  /* Make quack-card images and body identical to product-card */
+  .quack-card .product-card-img {
+    background: var(--beige);
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-bottom: 2px solid #3f2511;
+    flex: 1;
+  }
+  .quack-card .product-card-img img {
+    height: 220px;
+    width: auto;
+    object-fit: contain;
+    transition: transform .3s;
+  }
+  .quack-card .product-card-body .product-price {
+    padding-left: 12px;
+    border-left: 2px solid #3f2511;
+    margin-left: 12px;
+  }
   .quack-card .card-back { background: #f5e642; box-shadow: 5px 10px 0 var(--brown); }
   .quack-card-name { font-family: var(--font-display); font-size: 22px; color: var(--dark); }
   .quack-card-price { font-weight: 800; font-size: 18px; }
