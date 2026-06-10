@@ -501,7 +501,7 @@
 
   /* Make quack-card images and body identical to product-card */
   .quack-card .product-card-img {
-    background: var(--beige);
+    background: transparent;
     height: 260px;
     display: flex;
     align-items: center;
