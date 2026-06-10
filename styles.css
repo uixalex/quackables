@@ -24,6 +24,13 @@
     --font-body: 'Inter', sans-serif;
   }
 
+  /* Headline font: ensure Cubano is applied to headings and product titles */
+  h1, h2, h3, h4, .product-name, .card-back-name, .quack-card-name {
+    font-family: var(--font-display);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
   html { scroll-behavior: smooth; }
 
   body {
