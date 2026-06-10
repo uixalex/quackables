@@ -567,6 +567,8 @@
   }
   .promo-img:hover img { transform: rotate(-4deg) scale(1.05); }
 
+  
+
   /* ── EMAIL SIGNUP ── */
   .section-email {
     background: var(--coral);
