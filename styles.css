@@ -1,10 +1,10 @@
 /* ── Cubano via @font-face (Google Fonts doesn't host it, use a fallback stack) ── */
-  @font-face {
-    font-family: 'Cubano';
-    src: url('https://fonts.cdnfonts.com/s/14715/Cubano.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-  }
+@font-face {
+  font-family: 'Cubano';
+  src: url('https://fonts.cdnfonts.com/s/14715/Cubano.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -27,6 +27,7 @@
   /* Headline font: ensure Cubano is applied to headings and product titles */
   h1, h2, h3, h4, .product-name, .card-back-name, .quack-card-name {
     font-family: var(--font-display);
+    text-transform: uppercase;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
