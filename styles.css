@@ -818,7 +818,9 @@
     /* Product grid */
     .product-grid,
     .quacks-grid { grid-template-columns: 1fr; gap: 20px; }
-    .product-card, .quack-card { height: 320px; }
+    .product-card, .quack-card { height: 340px; }
+    .quack-card .product-card-img { flex: 0 0 220px; height: 220px; }
+    .quack-card .product-card-img img { height: 185px; }
 
     /* Story */
     .section-story { grid-template-columns: 1fr; gap: 32px; }
@@ -865,7 +867,9 @@
   @media (max-width: 480px) {
     .hero h1 { font-size: 40px; }
     .footer-top { grid-template-columns: 1fr; }
-    .product-card, .quack-card { height: 300px; }
+    .product-card, .quack-card { height: 320px; }
+    .quack-card .product-card-img { flex: 0 0 200px; height: 200px; }
+    .quack-card .product-card-img img { height: 165px; }
   }
 
   .nav-logo img {
